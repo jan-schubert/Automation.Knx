@@ -22,6 +22,7 @@ namespace Automation.Knx
 
     public static MultiCastAddress FromByteArray(byte[] bytes)
     {
+      Array.Reverse(bytes);
       return new MultiCastAddress((byte) (bytes[0] >> 4), (byte) (bytes[0] & 0x0F), bytes[1]);
     }
 
