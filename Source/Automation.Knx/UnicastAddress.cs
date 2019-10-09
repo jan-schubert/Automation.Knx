@@ -17,6 +17,7 @@ namespace Automation.Knx
 
     public byte[] GetBytes()
     {
+      Array.Reverse(bytes);
       return new[] {(byte) ((Area << 4) | Line), DeviceAddress};
     }
 
