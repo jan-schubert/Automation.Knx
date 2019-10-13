@@ -17,12 +17,12 @@ namespace Automation.Knx
 
     public byte[] GetBytes()
     {
-      Array.Reverse(bytes);
       return new[] {(byte) ((Area << 4) | Line), DeviceAddress};
     }
 
     public static UniCastAddress FromByteArray(byte[] bytes)
     {
+      Array.Reverse(bytes);
       return new UniCastAddress((byte) (bytes[0] >> 4), (byte) (bytes[0] & 0x0F), bytes[1]);
     }
 
