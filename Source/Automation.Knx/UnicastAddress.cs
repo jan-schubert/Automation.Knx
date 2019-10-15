@@ -22,7 +22,6 @@ namespace Automation.Knx
 
     public static UniCastAddress FromByteArray(byte[] bytes)
     {
-      Array.Reverse(bytes);
       return new UniCastAddress((byte) (bytes[0] >> 4), (byte) (bytes[0] & 0x0F), bytes[1]);
     }
 
