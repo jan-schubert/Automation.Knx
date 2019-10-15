@@ -26,7 +26,7 @@ namespace Automation.Knx.ReceiveParsers
 
       return new TunnelRequest(headerLength, protocolVersion, totalLength, structureLength, communicationChannel,
         sequenceCounter, messageCode, addInformationLength, controlField, controlField2,
-        UniCastAddress.FromByteArray(new[] {responseBytes[9], responseBytes[8]}),
+        UniCastAddress.FromByteArray(new[] {responseBytes[8], responseBytes[9]}),
         MultiCastAddress.FromByteArray(new[] {responseBytes[11], responseBytes[10]}), npduLength,
         new[] {responseBytes[12], responseBytes[13]});
     }
