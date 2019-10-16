@@ -6,4 +6,4 @@ Source/.vs/Automation/*
 Source/Automation.Knx/obj/**
 Source/Automation.sln.DotSettings.user
 Source/packages/**
-/Source/Automation.v3.ncrunchsolution.user
+Source/Automation.v3.ncrunchsolution.user
