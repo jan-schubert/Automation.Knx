@@ -1,8 +1,9 @@
 
 Source/.vs/Automation/DesignTimeBuild/*
-Source/.vs/Automation/v15/*
+Source/.vs/Automation/*
 **/bin/Debug/**
 **/obj/Debug/**
 Source/Automation.Knx/obj/**
 Source/Automation.sln.DotSettings.user
 Source/packages/**
+/Source/Automation.v3.ncrunchsolution.user
